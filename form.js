@@ -71,8 +71,4 @@ function materializeData(array) {
 
 getValues(url)
 
-document.addEventListener('DOMContentLoaded', selectorTheme())
 
-function selectorTheme() {
-    console.log("asaasd")
-}
