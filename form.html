@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+  <div class="wrapper">
+    <form class="form" method="post" action="http://localhost:3000/profile" target="dummyframe">
+    <label for="form">Enter data below:</label>
+      <fieldset class="fieldset">
+        <label for="login">Login: </label>
+        <input type="text" name="login">
+        <label for="password">Password: </label>
+        <input type="text" name="password">
+        <label for="email">Email: </label>
+        <input type="text" name="email">
+        <label for="phone">Phone: </label>
+        <input type="text" name="phone">
+        <label for="postcode">PostCode: </label>
+        <input type="text" name="postcode">
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>  
+
+    <form action="">
+      <label for="selector">Select the car:</label>
+      <select class="selector" id="select">
+        <option value="null">
+          --Please choose an option--
+        </option>
+        <option value="colorDay">Day</option>
+        <option value="colorNight">Night</option>
+        <option value="colorLight">Light</option>
+      </select>
+    </form>
+    <div class="database">
+    </div>
+  </div>
+  <script src="form.js"></script>
+</body>
+
+</html>
